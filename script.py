@@ -1,0 +1,7 @@
+m = input(">")
+f = open(m, encoding="utf8")
+data = f.read().replace(u"\ufeff","")
+f.close()
+g = open(m, "w", encoding="utf8")
+g.write(data)
+g.close()
